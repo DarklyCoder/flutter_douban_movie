@@ -111,7 +111,7 @@ class MovieListPageState extends State<MovieListPage> {
       var httpClient = new HttpClient();
       var request = await httpClient.getUrl(Uri.parse(url));
       var response = await request.close();
-      if (response.statusCode == HttpStatus.OK) {
+      if (mounted && response.statusCode == HttpStatus.OK) {
         var content = await response.transform(utf8.decoder).join();
 
         setState(() {
