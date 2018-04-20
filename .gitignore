@@ -53,3 +53,16 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+.DS_Store
+.atom/
+.dart_tool/
+.idea
+.vscode/
+.packages
+.pub/
+build/
+ios/.generated/
+packages
+.flutter-plugins
+
